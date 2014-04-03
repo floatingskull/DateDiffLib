@@ -19,7 +19,9 @@ long_integer_function check_for_leapyears(signed_long_integer startyear, signed_
 	//This function counts the number of leapyears between/including startyear and endyear.
 	
  	signed_long_integer i, ly, leapyears;
- 	
+
+	leapyears = 0;
+
  	//Determine if the dates were entered backwards (as will happen with BCE dates)
  	if(startyear > endyear)
 	{
